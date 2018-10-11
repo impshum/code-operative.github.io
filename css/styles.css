@@ -112,7 +112,7 @@ height:50px;
 }
 .main
 {
-  background-image:url("C:/Users/macie/Documents/Projects Web/CodeOperative/assets/NDC.jpeg") ;
+  background-image:url("/assets/NDC.jpeg") ;
   background-repeat:no-repeat;
   background-size:cover;
   
