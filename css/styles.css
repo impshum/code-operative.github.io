@@ -15,12 +15,17 @@ html {
 /**
  * Remove default margin.
  */
-body {
+body 
+{
   margin: 0;
   width:100%;
-    min-height:100%;
- 
-  
+  min-height:100%;  
+}
+
+.MissionStatement
+{
+background-image: url(https://code-operative.github.io/code-operative.co.uk/assets/NDC.jpeg);
+padding:25px;
 }
 
 
