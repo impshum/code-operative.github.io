@@ -24,7 +24,7 @@ body
 
 .MissionStatement
 {
-background-image: url(https://code-operative.github.io/code-operative.co.uk/assets/NDC.jpeg);
+background-image: url("https://code-operative.github.io/code-operative.co.uk/assets/NDC.jpeg");
 padding:25px;
 }
 
