@@ -91,9 +91,9 @@ float:right;
   color: white;
 }
 
-fa fa-phone-square
+i.fa.fa-phone-square 
 {
-margin-right:25px;
+    margin-right: 25px;
 }
 
 .header
