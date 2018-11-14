@@ -23,7 +23,8 @@ body
 }
 .LogoTxt
 {
-  float:left;padding:3px;
+  float:right;
+  padding:3px;
 }
 .MissionStatement
 {
