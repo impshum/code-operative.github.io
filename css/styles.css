@@ -21,7 +21,10 @@ body
   width:100%;
   min-height:100%;  
 }
-
+.LogoTxt
+{
+  float:left;padding:3px;
+}
 .MissionStatement
 {
 background-image: url("https://code-operative.github.io/code-operative.co.uk/assets/NDC.jpeg");
