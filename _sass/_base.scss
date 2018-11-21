@@ -1,0 +1,26 @@
+$content-width: 800px;
+$main: #19CCAA;
+$font-style: 'Rubik', sans-serif;
+$font-color: #262626;
+$link-color: #9a9bf2;
+$link-hover-color: #9aadf2;
+$link-visited-color: #9aadf2;
+$main-heading-font: 'Rubik', sans-serif;
+$main-heading-color: #d1ebff;
+$header:  #7971d0;
+$header-height: 50vh;
+//$header-width: 1280px;
+$heading-font: 'Rubik', sans-serif;
+$heading-font-color: #262626;
+$light: #E7EDF4;
+
+$tag-bg: #c2b3e1;
+$tag-bg-active: #d7cdec;
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
