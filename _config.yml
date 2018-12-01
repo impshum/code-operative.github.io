@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000"
 twitter_username: code_operative
 github_username:  code-operative
+commission_rate: 10%
 
 # Build settings
 sass:
