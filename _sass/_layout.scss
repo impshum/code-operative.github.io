@@ -75,6 +75,7 @@ header {
 
 .nav-item a {
     font-family: $main-heading-font;
+    color: $header-link-color;
     //text-shadow: 3px 3px 2px black;
     font-size: 24px;
 }
@@ -130,4 +131,12 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 80%;
+}
+
+/*
+*   ABOUT.HMTL
+*/
+
+.member {
+    padding: 10px;
 }
