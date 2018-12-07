@@ -18,8 +18,8 @@ email: code-operative@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://code-operative.co.uk"
-url: "http://127.0.0.1:4000"
+url: "http://code-operative.co.uk"
+#url: "http://127.0.0.1:4000"
 twitter_username: code_operative
 github_username:  code-operative
 commission_rate: 10%
