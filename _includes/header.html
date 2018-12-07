@@ -11,9 +11,9 @@
                 <li class="nav-item">
                     <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">Home</a>
                 </li>
-                {% for page in site.pages %} {% if page.title %}
+                {% for page in site.pages %} {% if page.nav-title %}
                 <li class="nav-item">
-                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.nav-title }}</a>
                 </li>
                 {% endif %} {% endfor %}
             </ul>
