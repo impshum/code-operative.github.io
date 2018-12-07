@@ -4,15 +4,29 @@ noPageTitle: true
 ---
 
 <!--Who we are, what we do-->
-<div class="intro-container">
+<div class="section">
     <h2>What we do..</h2>
     <p>
         We are a network of freelance software developers based in the North East.
     </p>
+    <p>
+        We bridge the gap between freelancers and the businesses that need them.
+    </p>
+    <p>
+        We are flexible and manage new projects, adapt existing codebases and provide
+        contracting services to address temporary skills and capacity shortages.
+    </p>
+    <p>
+        We seek to build long-term partnerships with our clients and have designed our
+        processes to put quality control first.
+    </p>
+    <p>
+        To discuss requirements, or seek a consultation, please <a href="{{ '/contact' | prepend: site.baseurl }}">get in touch</a>.
+    </p>
 </div>
 
 <!--co-op-->
-<div class="co-op">
+<div class="section">
     <!--text content-->
     <h2>Our Structure</h2>
 
@@ -25,7 +39,40 @@ noPageTitle: true
     </p>
 
     <!--co-ops uk logo-->
-    <div class="text-center"><img class="coopsuklogo" src="assets/img/coopsuk.jpg"></img></div>
+    <div class="text-center"><img class="coopsuklogo" src="assets/img/logo/coopsuk.jpg"></img></div>
+</div>
+
+<!--our partners-->
+<div class="section">
+    <h2>Paris. London. Gatesheid</h2>
+
+    <p>
+        We are part of a growing community of European co-ops, and have close relationships
+        with various organisations who would like to see us grow
+    </p>
+
+    {% for partner in site.partners %}
+    <div class="row partner">
+
+        <!--<h4 class="partner-title"><a href="{{partner.website}}">{{partner.name}}</a></h4>-->
+
+        <!--logo-->
+        <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="row">
+                <div class="col text-center">
+                    <img class="partner-logo" src="{{ partner.image_source | absolute_url }}" alt="{{partner.image_alt}}"></img>
+                </div>
+            </div>
+        </div>
+
+        <!--description-->
+        <div class="col-sm-6 col-md-7 col-lg-8">
+            <p class="partner-desc">
+                {{partner.description}}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 
 <hr/>

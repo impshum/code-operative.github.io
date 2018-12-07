@@ -111,6 +111,10 @@ header {
     margin-top: 20px;
 }
 
+.partner-logos {
+    margin-top: 20px;
+}
+
 /*
 *     FOOTER.HTML
 */
@@ -141,11 +145,30 @@ header {
 *   INDEX.HTML
 */
 
-.intro-container {
-    margin-top: 20px;
+.section {
+    margin-top: 40px;
     margin-bottom: 20px;
-    max-width: 80%;
 }
+
+.partner-title {
+    text-align: center;
+}
+
+.partner-logo {
+    margin: auto;
+}
+
+.partner-desc {
+    padding-left: 20px;
+}
+
+//smaller device logo display
+/*@media screen and (max-width: 976px) {
+    .partner-logo {
+        margin-left: 5px;
+        float: left;
+    }
+}*/
 
 /*
 *   ABOUT.HMTL

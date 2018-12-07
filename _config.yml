@@ -33,6 +33,7 @@ kramdown:
 collections:
 - projects
 - members
+- partners
 
 markdown: kramdown
 plugins:
