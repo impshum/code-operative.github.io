@@ -182,6 +182,10 @@ header {
 *   JOIN.HTML
 */
 
+.impact-font {
+    font-family: $impact-font-style;
+}
+
 .section h3, .section h4 {
     font-weight: bold;
     text-align: center;
