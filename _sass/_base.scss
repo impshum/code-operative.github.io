@@ -1,3 +1,20 @@
+.typewriter h6 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        3.5s steps(40,end),
+        blink-caret 75s step-end infinite;
+}
+
+@keyframes typing
+{
+    from { width:0 }
+    to { width:100% }
+}
+
 $content-width: 800px;
 $main: #19CCAA;
 $font-style: 'Rubik', sans-serif;
