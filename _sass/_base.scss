@@ -15,6 +15,13 @@
     to { width:100% }
 }
 
+@keyframes blink-caret
+{
+    from ,to{ border-color:transparent}
+	50%{color:orange;}	
+}
+
+
 $content-width: 800px;
 $main: #19CCAA;
 $font-style: 'Rubik', sans-serif;
