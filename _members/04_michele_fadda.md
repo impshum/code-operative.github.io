@@ -3,7 +3,8 @@ identifier: michele-fadda
 fullname: Michele Fadda
 #website:
 
-bio: Digital entrepreneur and proud developer. Born in Sassari, he spent his
+bio: |
+Digital entrepreneur and proud developer. Born in Sassari, he spent his
 first 19 years, doing classical studies, stealing his father's radio
 books, and learning everything he could about anything vaguely digital,
 and learning how to program in assembler 8080A assembly by himself, all
