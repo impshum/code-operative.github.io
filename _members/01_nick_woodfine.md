@@ -5,5 +5,5 @@ fullname: Nick Woodfine
 
 bio: Nick has been a commercial developer for 15 years working within the telecoms, banking, utilities & public sector, operating freelance for the last 10 of these. Originally inspired to code at an early age through a love of video games. he has returned to his roots developing mobile & PC games & runs a community group to encourage others to do the same.
 
-#image_source: '/assets/img/profile/'
+image_source: '/assets/img/profile/nick.JPG'
 ---

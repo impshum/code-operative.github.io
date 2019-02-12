@@ -5,5 +5,5 @@ fullname: Maciek Bajda
 
 bio: Maciek is a self-taught web designer and developer.
 
-#image_source: '/assets/img/profile/'
+image_source: '/assets/img/profile/maciek.jpg'
 ---
