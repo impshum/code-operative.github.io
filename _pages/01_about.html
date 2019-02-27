@@ -18,8 +18,10 @@ permalink: /about/
 
         <div class="row">
             <!--profile pic-->
-            <div class="col-md-4">
-
+            <div class="col-md-4 profile-pic">
+                {% if member.image_source %}
+                    <img src="{{member.image_source}}" alt="profile picture of {{member.fullname}}"></img>
+                {% endif %}
             </div>
 
             <!--bio-->
