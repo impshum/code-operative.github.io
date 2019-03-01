@@ -51,9 +51,16 @@ main {
 *   HEADER.HTML
 */
 
+.navbar-toggler {
+    background-color: $light;
+}
+
 header {
     //max-width: $header-width;
     background-color: $header;
+    /*background-image: url("/assets/img/logo/header.png");
+    background-repeat: no-repeat;
+    background-position: center;*/
     padding: 0px 15px;
     text-align: center;
     height: $header-height;
@@ -67,6 +74,10 @@ header {
     //text-shadow: 4px 4px 2px black;
     font-family: $main-heading-font;
     font-size: 64px;
+}
+
+.highlight-text {
+    color: $secondary-heading-color;
 }
 
 .nav-item {
