@@ -58,9 +58,9 @@ main {
 header {
     //max-width: $header-width;
     background-color: $header;
-    /*background-image: url("/assets/img/logo/header.png");
+    background-image: url("/assets/img/logo/header.png");
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
     padding: 0px 15px;
     text-align: center;
     height: $header-height;
@@ -89,6 +89,8 @@ header {
     color: $header-link-color;
     //text-shadow: 3px 3px 2px black;
     font-size: 24px;
+    text-shadow: 1px 1px 10px $header;
+    font-weight: bold;
 }
 
 .nav-item a:hover {
