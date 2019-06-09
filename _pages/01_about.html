@@ -11,7 +11,7 @@ permalink: /about/
 
     {% for member in site.members %}
     <div id="{{member.identifier}}" class="member card">
-        <h4>{{member.fullname}}</h4>
+        <h4>{{member.title}}</h4>
         {% if member.website %}
             <p>Website: <a href="{{member.website}}">{{member.website}}</a></p>
         {% endif %}
@@ -20,7 +20,7 @@ permalink: /about/
             <!--profile pic-->
             <div class="col-md-4 profile-pic">
                 {% if member.image_source %}
-                    <img src="{{member.image_source}}" alt="profile picture of {{member.fullname}}"></img>
+                    <img src="{{member.image_source}}" alt="profile picture of {{member.title}}"></img>
                 {% endif %}
             </div>
 
@@ -29,6 +29,10 @@ permalink: /about/
                 {% if member.bio %}
                     <div class="card-text">
                         <p>{{member.bio}}</p>
+
+                        {% if member.long_bio %}
+                            <h5><a href="{{ member.url | prepend: site.baseurl }}" class="profile-link">read more..</a></h5>
+                        {% endif %}
                     </div>
                 {% endif %}
             </div>

@@ -1,9 +1,15 @@
 ---
 identifier: michele-fadda
-fullname: Michele Fadda
+title: Michele Fadda
 #website:
 
-bio: >
+bio:
+    Digital entrepreneur and proud developer. Been a developer since learning how
+    to program in assembler 8080A at aged 12. Author of about fifty technical articles on digital electronics and
+    programming in magazines. As a consultant, has been involved in numerous projects in
+    Italy, using a variety of programming languages ​​for over 3 decades. iOS specialist with backend and cryptography experience also
+
+long_bio: >
     Digital entrepreneur and proud developer. Born in Sassari, he spent his
     first 19 years, doing classical studies, stealing his father's radio
     books, and learning everything he could about anything vaguely digital,

@@ -1,6 +1,6 @@
 ---
 identifier: calum-mackervoy
-fullname: Calum Mackervoy
+title: Calum Mackervoy
 website: https://calum.mackervoy.com
 
 bio: Calum is a full stack developer who has been freelance since graduating from Newcastle University in 2017. He has worked on a variety of projects, including an automated billing system for a local ISP, a mailing management server being used within the NHS and multiple commercial apps.
