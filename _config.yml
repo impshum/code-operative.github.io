@@ -31,9 +31,23 @@ include: ['_pages']
 kramdown:
   input: GFM
 collections:
-- projects
-- members
-- partners
+  projects:
+    output: false
+  members:
+    output: true
+  partners:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "profile"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
 
 markdown: kramdown
 plugins:
