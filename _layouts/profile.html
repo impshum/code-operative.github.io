@@ -1,0 +1,34 @@
+---
+layout: page
+---
+
+<div id="profile-container">
+    {% if page.website %}
+        <p>Website: <a href="{{page.website}}">{{page.website}}</a></p>
+    {% endif %}
+
+    <div class="row">
+        <!--profile pic-->
+        <div class="col-md-4 profile-pic">
+            {% if page.image_source %}
+                <img src="{{page.image_source}}" alt="profile picture of {{page.title}}"></img>
+            {% endif %}
+        </div>
+
+        <!--bio-->
+        <div class="col-md-8">
+            {% if page.long_bio %}
+                <div class="card-text">
+                    <p>{{page.long_bio}}</p>
+                </div>
+
+            {% elsif page.bio %}
+                <div class="card-text">
+                    <p>{{page.bio}}</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!--TODO: project/experience highlights?-->
+    </div>
+</div>
