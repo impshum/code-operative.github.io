@@ -9,14 +9,14 @@ layout: page
 
     <div class="row">
         <!--profile pic-->
-        <div class="col-md-4 profile-pic">
+        <div class="col-sm-6 col-md-4 profile-pic">
             {% if page.image_source %}
                 <img src="{{page.image_source}}" alt="profile picture of {{page.title}}"></img>
             {% endif %}
         </div>
 
         <!--bio-->
-        <div class="col-md-8">
+        <div class="col-sm-6 col-md-8">
             {% if page.long_bio %}
                 <div class="card-text">
                     <p>{{page.long_bio}}</p>
