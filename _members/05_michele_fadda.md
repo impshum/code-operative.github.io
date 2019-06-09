@@ -4,10 +4,9 @@ title: Michele Fadda
 #website:
 
 bio:
-    Digital entrepreneur and proud developer. Been a developer since learning how
+    Digital entrepreneur, been a developer since learning how
     to program in assembler 8080A at aged 12. Author of about fifty technical articles on digital electronics and
-    programming in magazines. As a consultant, has been involved in numerous projects in
-    Italy, using a variety of programming languages ​​for over 3 decades. iOS specialist with backend and cryptography experience also
+    programming in magazines. As a consultant, has been involved in numerous projects using a variety of programming languages ​​for over 3 decades. iOS specialist with full-stack experience, most notably in backend and cryptography
 
 long_bio: >
     Digital entrepreneur and proud developer. Born in Sassari, he spent his
