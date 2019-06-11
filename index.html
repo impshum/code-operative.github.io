@@ -35,11 +35,11 @@ noPageTitle: true
         shares in the venture and Code-Operative's commission is only ever enough to
         cover operational costs. This means our members can enjoy the benefits of
         collaboration whilst retaining the benefits of being self employed.
-        Our commission rate is currently {{site.commission_rate}}
+        Our commission is charged as a {{site.commission_rate}} fee for both the client and freelancer
     </p>
 
-    <!--co-ops uk logo-->
-    <div class="text-center"><img class="coopsuklogo" src="assets/img/logo/coopsuk.jpg"></img></div>
+    <!--membership logos-->
+    {% include membership.html %}
 </div>
 
 <!--our partners-->
@@ -48,7 +48,7 @@ noPageTitle: true
 
     <p>
         We are part of a growing community of European co-ops, and have close relationships
-        with various organisations who would like to see us grow
+        with various organisations in the UK and beyond
     </p>
 
     {% for partner in site.partners %}
