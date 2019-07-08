@@ -135,8 +135,20 @@ header {
     margin-bottom: 40px;
 }
 
+.full-height {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.membership-col {
+    height: inherit;
+}
+
 .membership-col > img {
     max-width: 95%;
+    max-height: 100%;
+    vertical-align: middle;
 }
 
 .partner-logos {
