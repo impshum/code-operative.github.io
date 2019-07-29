@@ -37,6 +37,8 @@ collections:
     output: true
   partners:
     output: false
+  clients:
+    output: false
 
 defaults:
   - scope:
