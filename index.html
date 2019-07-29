@@ -42,6 +42,18 @@ noPageTitle: true
     {% include membership.html %}
 </div>
 
+<!--our clients & projects-->
+<div class="section">
+    <h2>Our Clients</h2>
+
+    <!--clients carousel-->
+    <div id="client-carousel" class="autoplay">
+        {% for client in site.clients %}
+            <div class="client-img"><img src="{{ client.image_source | absolute_url }}" alt="{{client.title}} logo"/></div>
+        {% endfor %}
+    </div>
+</div>
+
 <!--our partners-->
 <div class="section">
     <h2>Paris. London. Gateshead</h2>
