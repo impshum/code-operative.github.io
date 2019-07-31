@@ -1,8 +1,6 @@
-console.log("main.js is ran!");
-
 $('.autoplay').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2500,
 });

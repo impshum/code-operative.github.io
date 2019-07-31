@@ -49,7 +49,9 @@ noPageTitle: true
     <!--clients carousel-->
     <div id="client-carousel" class="autoplay">
         {% for client in site.clients %}
-            <div class="client-img"><img src="{{ client.image_source | absolute_url }}" alt="{{client.title}} logo"/></div>
+            <div class="client-img-frame">
+                <img class="client-img" src="{{ client.image_source | absolute_url }}" alt="{{client.title}} logo"/>
+            </div>
         {% endfor %}
     </div>
 </div>

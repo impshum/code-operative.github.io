@@ -212,13 +212,22 @@ header {
 }*/
 
 //carousel
-.client-img {
-    max-width: 33%;
-    margin: auto;
+.client-img-frame {
+    width: 33%;
+    height: 250px;
+    position: relative;
 }
 
-.client-img img {
+.client-img {
+    margin: auto;
+    padding: 10px;
+    max-height: 100%;
     max-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 /*
