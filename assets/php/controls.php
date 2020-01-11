@@ -56,6 +56,13 @@ function get_clients($uber_parsedown)
 {
     $md_clients = glob("assets/md/clients/" . "*.md", GLOB_BRACE);
 
+    echo "
+    <section class='section'>
+      <div class='container'>
+        <h1 class='title'><i class='fas fa-sm fa-user-friends'></i>&nbsp;Clients</h1>
+        <div class='clients-logos'>
+    ";
+
     foreach ($md_clients as $md_client) {
         $results = get_md($uber_parsedown, $md_client);
         $title = $results['md_meta']['title'];
@@ -64,12 +71,25 @@ function get_clients($uber_parsedown)
         $client = "<div class='slide'><a href='$url'><img src='$image' alt='$title'></a></div>";
         echo $client;
     }
+
+    echo "
+        </div>
+      </div>
+    </section>
+    ";
 }
 
 
 function get_community($uber_parsedown)
 {
     $md_clients = glob("assets/md/community/" . "*.md", GLOB_BRACE);
+
+    echo "
+    <section class='section'>
+      <div class='container'>
+        <h1 class='title'><i class='fas fa-sm fa-users'></i>&nbsp;Community</h1>
+        <div class='columns is-multiline'>
+    ";
 
     foreach ($md_clients as $md_client) {
         $results = get_md($uber_parsedown, $md_client);
@@ -87,4 +107,54 @@ function get_community($uber_parsedown)
         ";
         echo $client;
     }
+
+    echo "
+        </div>
+      </div>
+    </section>
+    ";
+}
+
+
+function get_members($uber_parsedown)
+{
+    $md_members = glob("assets/md/members/" . "*.md", GLOB_BRACE);
+
+    echo "
+    <section class='section'>
+      <div class='container'>
+        <div class='content'>
+          <h1 class='title'><i class='fas fa-sm fa-users'></i>&nbsp;Members</h1>
+        </div>
+    ";
+
+    foreach ($md_members as $md_member) {
+        $results = get_md($uber_parsedown, $md_member);
+        $name = $results['md_meta']['name'];
+        $url = $results['md_meta']['url'];
+        $image = $results['md_meta']['image'];
+        $content = $results['md_content'];
+        $section = "
+        <article class='media'>
+          <figure class='media-left'>
+            <img src='$image'>
+          </figure>
+          <div class='media-content'>
+            <div class='content'>
+              <p>
+                <strong>$name</strong>&nbsp;&nbsp;<a href='$url'><i class='fas fa-xs fa-external-link-alt lonk'></i></a>
+                <br>
+                $content
+              </p>
+            </div>
+          </div>
+        </article>
+        ";
+        echo $section;
+    }
+
+    echo "
+      </div>
+    </section>
+    ";
 }

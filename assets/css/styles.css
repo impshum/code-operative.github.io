@@ -87,7 +87,7 @@ h1.title:not(.coop) {
 }
 
 .hero.is-large .hero-body {
-  padding-top: 10rem;
+  padding-top: 12rem;
   padding-bottom: 10rem;
 }
 
@@ -115,7 +115,7 @@ h2.coop {
   }
 
   .hero.is-large .hero-body {
-    padding-top: 12rem;
+    padding-top: 14rem;
     padding-bottom: 12rem;
   }
 
@@ -153,9 +153,9 @@ h2.coop {
   color: #2bb5fc;
 }
 
-.lonks i {
-  margin: 2px;
-  color: #000;
+.lonk {
+  position: relative;
+  top: -1px;
 }
 
 .media-left img {

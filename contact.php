@@ -16,44 +16,9 @@
   <?php
   include('assets/partials/navbar.php');
   include('assets/partials/hero.php');
+  include('assets/partials/contact.php');
+  include('assets/partials/footer.php');
   ?>
-
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-6">
-          <div class="content">
-            <h1 class="title"><i class="far fa-sm fa-comments"></i>&nbsp;Contact</h1>
-            <p>To discuss requirements, or seek a consultation, please get in touch by filling out the form below.</p>
-          </div>
-          <form id="contact">
-            <div class="field">
-              <div class="control">
-                <input class="input" type="text" placeholder="Name" required>
-              </div>
-            </div>
-            <div class="field">
-              <div class="control">
-                <input class="input" type="email" placeholder="Email address" required>
-              </div>
-            </div>
-            <div class="field">
-              <div class="control">
-                <textarea class="textarea" placeholder="Your message" required></textarea>
-              </div>
-            </div>
-            <div class="field">
-              <div class="control">
-                <input type="submit" class="button is-fullwidth"></input>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <?php include('assets/partials/footer.php'); ?>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>

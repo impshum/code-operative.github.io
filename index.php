@@ -20,35 +20,11 @@ require('assets/php/controls.php');
   include('assets/partials/navbar.php');
   include('assets/partials/hero.php');
   get_sections($uber_parsedown);
+  include('assets/partials/button.php');
+  get_clients($uber_parsedown);
+  get_community($uber_parsedown);
+  include('assets/partials/footer.php');
   ?>
-
-  <section class="hero is-medium is-light spread">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <a href="contact.php" class="button has-text-weight-semibold is-large is-black join">Join Code-Operative</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title"><i class="fas fa-sm fa-user-friends"></i>&nbsp;Clients</h1>
-      <div class="clients-logos">
-        <?php get_clients($uber_parsedown); ?>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title"><i class="fas fa-sm fa-users"></i>&nbsp;Community</h1>
-      <div class="columns is-multiline">
-        <?php get_community($uber_parsedown); ?>
-      </div>
-    </div>
-  </section>
-
-  <?php include('assets/partials/footer.php'); ?>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
