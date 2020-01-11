@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Rubik&display=swap');
+
+::selection {
+  background: pink;
+}
+
+::-moz-selection {
+  background: pink;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a0a0a;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  transition: .3s;
+  color: #000;
+}
+
+a:hover {
+  transition: .3s;
+  color: #2bb5fc !important;
+}
+
+a.navbar-item:hover {
+  background: transparent !important;
+}
+
+.load-me {
+  opacity: 0;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.header {
+  background: #373383;
+}
+
+.ass {
+  display: none;
+}
+
+.ass img {
+  width: 100%;
+}
+
+.clients img {
+  width: 100%;
+}
+
+.section:first-of-type {
+  margin-top: 4rem;
+}
+
+h1.title:not(.coop) {
+  margin-bottom: 3rem;
+}
+
+.spread {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.join {
+  padding: 2rem 4rem;
+}
+
+@media only screen and (max-width : 768px) {
+  .rev-col {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.hero.is-large .hero-body {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+h1.coop {
+  transition: .3s;
+  font-size: 3rem !important;
+}
+
+h2.coop {
+  transition: .3s;
+  font-size: 1.1rem !important;
+}
+
+@media only screen and (min-width : 768px) {
+  h1.coop {
+    font-size: 5rem !important;
+  }
+
+  h2.coop {
+    font-size: 1.5rem !important;
+  }
+
+  .join {
+    padding: 2.5rem 8rem;
+  }
+
+  .hero.is-large .hero-body {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .hero:first-of-type {
+    margin-bottom: 3.5rem;
+  }
+
+  .navbar {
+    padding: .5rem;
+  }
+
+  .ass {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .ass img {
+    width: 80%;
+  }
+
+  .clients img {
+    width: 50%;
+  }
+
+  .footer {
+    margin-top: 8rem !important;
+  }
+}
+
+.coop {
+  font-family: 'Patua One', cursive;
+}
+
+.coop span {
+  color: #2bb5fc;
+}
+
+.lonks i {
+  margin: 2px;
+  color: #000;
+}
+
+.media-left img {
+  width: 96px;
+  height: 96px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.notifications {
+  position: fixed;
+  z-index: 9999;
+  right: 15px;
+  bottom: 15px;
+  width: auto;
+}
+
+.notification {
+  position: relative;
+  top: 0;
+  min-width: 100px;
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  transition: .3s;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+}
+
+.notification:hover {
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .2);
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    visibility: visible;
+    -webkit-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    visibility: visible;
+    -webkit-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0);
+  }
+}
+
+.slideOutRight {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
