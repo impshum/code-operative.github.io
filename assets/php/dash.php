@@ -19,6 +19,7 @@ function get_md($uber_parsedown, $md_fname)
     return $results;
 }
 
+
 function get_md_data($uber_parsedown, $p_id, $p_type)
 {
     $p_file = "assets/md/$p_type/$p_id.md";
@@ -26,8 +27,34 @@ function get_md_data($uber_parsedown, $p_id, $p_type)
     return json_encode($p_data);
 }
 
-if (isset($_POST['p_id']) && isset($_POST['p_type'])) {
-    $p_id = $_POST['p_id'];
-    $p_type = $_POST['p_type'];
-    echo get_md_data($uber_parsedown, $p_id, $p_type);
+if (isset($_POST['mode'])) {
+    $mode = $_POST['mode'];
+    if ($mode == 'edit') {
+        if (isset($_POST['p_id']) && isset($_POST['p_type'])) {
+            $p_id = $_POST['p_id'];
+            $p_type = $_POST['p_type'];
+            echo get_md_data($uber_parsedown, $p_id, $p_type);
+        }
+    } elseif ($mode == 'save') {
+        if (isset($_POST['p_id']) && isset($_POST['p_type'])) {
+            $p_id = $_POST['p_id'];
+            $p_type = $_POST['p_type'];
+            $title = "title: " . $_POST['title'] . "\n";
+            $name = "name: " . $_POST['name'] . "\n";
+            $url = "url: " . $_POST['url'] . "\n";
+            $icon = "icon: " . $_POST['icon'] . "\n";
+            $image = "image: " . $_POST['image'] . "\n";
+            $md_content = $_POST['content'];
+            $meta = $title . $name . $url . $icon . $image;
+            $p_file = "../md/$p_type/$p_id.md";
+            $content = "---
+$meta
+---
+$md_content";
+            $fp = fopen($p_file, 'w');
+            $r = fwrite($fp, $content);
+            fclose($fp);
+            echo $r;
+        }
+    }
 }

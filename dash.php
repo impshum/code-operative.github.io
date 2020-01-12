@@ -55,6 +55,9 @@ if (!isset($_SESSION['user_data']['username'])) {
 
 					<div class='column is-6 dash'>
 
+						<input id="p_id" class="input is-hidden" name="p_id" type="text">
+						<input id="p_type" class="input is-hidden" name="p_type" type="text">
+
 						<div id="edit-title-parent" class="field is-horizontal">
 						  <div class="field-label is-normal">
 						    <label class="label">Title</label>
@@ -124,7 +127,7 @@ if (!isset($_SESSION['user_data']['username'])) {
 
 						<div class="buttons">
 						  <button class="button toggle-modal">Close</button>
-						  <button class="button">Save</button>
+						  <button id="save" class="button">Save</button>
 						</div>
 					</div>
 
@@ -163,6 +166,7 @@ if (!isset($_SESSION['user_data']['username'])) {
 		$.ajax({
 			type: 'POST',
 			data: {
+				'mode': 'edit',
 				'p_id': p_id,
 				'p_type': p_type
 			},
@@ -179,6 +183,9 @@ if (!isset($_SESSION['user_data']['username'])) {
 					var image = items.md_meta.image;
 
 					$('.is-horizontal').hide();
+
+					$('#p_id').val(p_id);
+					$('#p_type').val(p_type);
 
 					if (title) {
 						$('#edit-title').val(title);
@@ -211,6 +218,40 @@ if (!isset($_SESSION['user_data']['username'])) {
 						$('#edit-modal').addClass('show-modal');
 					}
 
+				}
+			},
+			error: function(error) {
+				console.log(error);
+			}
+		});
+	});
+
+	$('#save').on('click', function(){
+		var p_id = $('#p_id').val();
+		var p_type = $('#p_type').val();
+		var title = $('#edit-title').val();
+		var name = $('#edit-name').val();
+		var url = $('#edit-url').val();
+		var icon = $('#edit-icon').val();
+		var image = $('#edit-image').val();
+		var content = easyMDE.value();
+		$.ajax({
+			type: 'POST',
+			data: {
+				'mode': 'save',
+				'p_id': p_id,
+				'p_type': p_type,
+				'title': title,
+				'name': name,
+				'url': url,
+				'icon': icon,
+				'image': image,
+				'content': content,
+			},
+			url: 'assets/php/dash.php',
+			success: function(data) {
+				if (data) {
+					notify('Saved', 'black', 5000);
 				}
 			},
 			error: function(error) {

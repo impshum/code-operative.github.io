@@ -4,7 +4,7 @@ ini_set('display_errors', '1');
 require('assets/php/controls.php');
 
 if (isset($_POST['submit'])) {
-    $logins = array('impshum' => 'slappa');
+    $logins = array('root' => 'toor');
 
     $username = isset($_POST['username']) ? $_POST['username'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
