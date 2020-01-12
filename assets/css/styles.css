@@ -101,6 +101,10 @@ h2.coop {
   font-size: 1.1rem !important;
 }
 
+.section:nth-child(3) {
+  margin-top: 3.5rem;
+}
+
 @media only screen and (min-width : 768px) {
   h1.coop {
     font-size: 5rem !important;
@@ -117,10 +121,6 @@ h2.coop {
   .hero.is-large .hero-body {
     padding-top: 14rem;
     padding-bottom: 12rem;
-  }
-
-  .hero:first-of-type {
-    margin-bottom: 3.5rem;
   }
 
   .navbar {
@@ -141,7 +141,7 @@ h2.coop {
   }
 
   .footer {
-    margin-top: 8rem !important;
+    margin-top: 6rem !important;
   }
 }
 
@@ -165,10 +165,69 @@ h2.coop {
   object-fit: cover;
 }
 
+img.list-image {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.clients-logos {
+  height: 103px;
+}
+
+.list-lot {
+  margin-bottom: 4rem;
+}
+
+.list-lot .box {
+  transition: .3s;
+}
+
+.list-lot .box:hover {
+  background: whitesmoke;
+  transition: .3s;
+  cursor: pointer;
+}
+
 .footer {
   margin-top: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.toggle-modal {
+  transition: .3s;
+}
+
+.toggle-modal:hover {
+  cursor: pointer;
+  transition: .3s;
+}
+
+#edit-modal {
+  position: fixed;
+  top: -150vh;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  transition: .3s;
+}
+
+#close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.show-modal {
+  top: 0 !important;
+  transition: .3s;
+}
+
+.field-label {
+  flex-grow: 0 !important;
 }
 
 .notifications {

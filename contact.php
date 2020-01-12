@@ -1,3 +1,6 @@
+<?php
+require('assets/php/controls.php');
+?>
 <!DOCTYPE html>
 <html>
 

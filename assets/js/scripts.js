@@ -39,7 +39,7 @@ $(function() {
 
   $('body').append("<div class='notifications'></div>");
 
-  $('.button').click(function() {
+  $('.fgfgf').click(function() {
     notify('Did you press a button?', 'black', 5000);
   });
 

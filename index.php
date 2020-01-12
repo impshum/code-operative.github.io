@@ -21,8 +21,9 @@ require('assets/php/controls.php');
   include('assets/partials/hero.php');
   get_sections($uber_parsedown);
   include('assets/partials/button.php');
-  get_clients($uber_parsedown);
   get_community($uber_parsedown);
+  get_clients($uber_parsedown);
+
   include('assets/partials/footer.php');
   ?>
 

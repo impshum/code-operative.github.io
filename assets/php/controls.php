@@ -1,12 +1,21 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+session_start();
 
 require('assets/vendor/autoload.php');
 
 use Pagerange\Markdown\MetaParsedown;
 
 $uber_parsedown = new MetaParsedown();
+
+function is_logged_in()
+{
+    if (isset($_SESSION['user_data']['username'])) {
+        return true;
+    }
+    return false;
+}
 
 
 function get_md($uber_parsedown, $md_fname)
@@ -36,7 +45,7 @@ function get_sections($uber_parsedown)
             <div class='columns rev-col'>
               <div class='column is-10'>
                 <div class='content'>
-                  <h1 class='title load-me'><i class='fas fa-sm fa-$icon'></i>&nbsp;$title</h1>
+                  <h1 class='title load-me'><i class='fas fa-sm fa-$icon'></i>&nbsp;&nbsp;$title</h1>
                   $content
                 </div>
               </div>
@@ -59,7 +68,7 @@ function get_clients($uber_parsedown)
     echo "
     <section class='section'>
       <div class='container'>
-        <h1 class='title'><i class='fas fa-sm fa-user-friends'></i>&nbsp;Clients</h1>
+        <h1 class='title'><i class='fas fa-sm fa-user-friends'></i>&nbsp;&nbsp;Clients</h1>
         <div class='clients-logos'>
     ";
 
@@ -87,7 +96,7 @@ function get_community($uber_parsedown)
     echo "
     <section class='section'>
       <div class='container'>
-        <h1 class='title'><i class='fas fa-sm fa-users'></i>&nbsp;Community</h1>
+        <h1 class='title'><i class='fas fa-sm fa-users'></i>&nbsp;&nbsp;Community</h1>
         <div class='columns is-multiline'>
     ";
 
@@ -124,7 +133,7 @@ function get_members($uber_parsedown)
     <section class='section'>
       <div class='container'>
         <div class='content'>
-          <h1 class='title'><i class='fas fa-sm fa-users'></i>&nbsp;Members</h1>
+          <h1 class='title'><i class='fas fa-sm fa-users'></i>&nbsp;&nbsp;Members</h1>
         </div>
     ";
 
@@ -157,4 +166,40 @@ function get_members($uber_parsedown)
       </div>
     </section>
     ";
+}
+
+
+function dash_list($uber_parsedown, $part)
+{
+    $part_title = ucfirst($part);
+    $all_parts = glob("assets/md/$part/" . "*.md", GLOB_BRACE);
+
+    echo "
+    <div class='content'>
+      <h1 class='title load-me'><i class='fas fa-xs fa-layer-group'></i>&nbsp;&nbsp;$part_title</h1>
+    </div>
+    <div class='list-lot'>
+    ";
+
+    foreach ($all_parts as $p) {
+        $results = get_md($uber_parsedown, $p);
+        if ($part == "members") {
+            $title = $results['md_meta']['name'];
+        } else {
+            $title = $results['md_meta']['title'];
+        }
+        $image = $results['md_meta']['image'];
+        $p_parts = pathinfo($p);
+        $p_id = (int)$p_parts['filename'];
+        echo "
+            <div class='box edit' data-p_id='$p_id' data-p_type='$part'>
+              <div class='is-pulled-left'></div>
+              <article class='media'>
+              <img class='list-image' src='$image'>
+                &nbsp;<strong>$title</strong>
+              </article>
+            </div>
+            ";
+    }
+    echo "</div>";
 }
