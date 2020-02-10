@@ -193,7 +193,7 @@ function dash_list($uber_parsedown, $part)
         $p_id = (int)$p_parts['filename'];
         echo "
             <div class='box edit' data-p_id='$p_id' data-p_type='$part'>
-              <div class='is-pulled-left'></div>
+              <div class='is-pulled-right'><i class='far fa-xs fa-trash-alt'></i></div>
               <article class='media'>
               <img class='list-image' src='$image'>
                 &nbsp;<strong>$title</strong>

@@ -20,6 +20,7 @@
       <a class='navbar-item has-text-weight-bold load-me' href="./contact.php"><i class="fas fa-md fa-envelope"></i>&nbsp;&nbsp;Contact</a>
       <a class="navbar-item has-text-weight-bold load-me" href="https://github.com/Code-Operative"><i class="fab fa-md fa-github"></i>&nbsp;&nbsp;Github</a>
       <a class="navbar-item has-text-weight-bold load-me" href="https://twitter.com/code_operative"><i class="fab fa-md fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
+      <a class='navbar-item has-text-weight-bold load-me start_game'><i class="fas fa-md fa-play"></i></a>
       <?php if (is_logged_in()) {
         echo "
         <a class='navbar-item has-text-weight-bold load-me' href='./dash.php'><i class='fas fa-md fa-cogs'></i>&nbsp;&nbsp;Dash</a>

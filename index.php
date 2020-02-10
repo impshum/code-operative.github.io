@@ -23,13 +23,13 @@ require('assets/php/controls.php');
   include('assets/partials/button.php');
   get_community($uber_parsedown);
   get_clients($uber_parsedown);
-
   include('assets/partials/footer.php');
   ?>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/game.js"></script>
 </body>
 
 </html>
